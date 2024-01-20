@@ -13,9 +13,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build and test
       run: chmod +x /home/runner/work/_temp/fbd22ddc-20f8-423f-a6cf-eec2f23c1de6.sh
-      run: chmod +x ./mvnw
-      run: sudo /home/runner/work/_temp/fbd22ddc-20f8-423f-a6cf-eec2f23c1de6.sh
-      run: /full/path/to/mvnw
+    
 
       run: ./mvnw clean package
       
