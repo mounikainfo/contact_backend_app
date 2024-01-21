@@ -16,12 +16,8 @@ jobs:
          java-version: '17'
          distribution : 'temurin'
     - name: Build and tet
-      run: mvn --batch-mode --update-snapshots verify
-     
-    
-
-      # run: ./mvnw clean packag
-      
+      run: mvn --batch-mode --update-snapshots verify 
+      # run: ./mvnw clean packag    
     - name: Build Docker image
       uses: docker/login-action@f054a8b539a109f9f41c372932f1ae047eff08c9
       with:
